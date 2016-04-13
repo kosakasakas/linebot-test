@@ -31,7 +31,26 @@ $app->post('/callback', function (Request $request) use ($app, $bot) {
         $content = $obj['content'];
 
         if ($content['text']) {
-            $bot->sendText($from, "デプロイテスト"); 
+            $input = array(
+            "ウヒョ",
+            "ウヒョヒョー",
+            "せやねん",
+            "たしかーにバーガー",
+            "たしかーに",
+            "せやのう",
+            "せやね",
+            "そ！",
+            "ういー",
+            "ええやん",
+            "それな",
+            "よいショー",
+            "それな",
+            "おけ",
+            "なるみ",
+            "うすうす",
+            "りょ",
+            "あざす");
+            $bot->sendText($from, $input[4]);
         }
     }
 

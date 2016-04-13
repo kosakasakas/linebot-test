@@ -50,8 +50,8 @@ $app->post('/callback', function (Request $request) use ($app, $bot) {
             "うすうす",
             "りょ",
             "あざす");
-            $rand_keys = array_rand($input, 2);
-            $bot->sendText($from, $input[$rand_keys[0]]);
+            $rand_key = array_rand($input, 1);
+            $bot->sendText($from, $input[$rand_key[0]]);
         }
     }
 

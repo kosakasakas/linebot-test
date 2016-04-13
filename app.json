@@ -1,7 +1,7 @@
 {
   "name": "PHP LineBot Test",
   "description": "linebot tiny starter kit written in PHP.",
-  "repository": "https://github.com/CoachUnited/linebot-test.git",
+  "repository": "https://github.com/kosakasakas/linebot-test.git",
   "addons": [
     "fixie:tricycle"
   ],

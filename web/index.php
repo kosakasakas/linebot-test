@@ -51,7 +51,7 @@ $app->post('/callback', function (Request $request) use ($app, $bot) {
             "りょ",
             "あざす");
             $rand_key = array_rand($input, 1);
-            $bot->sendText($from, $input[$rand_key[0]]);
+            $bot->sendText($from, $input[$rand_key]);
         }
     }
 

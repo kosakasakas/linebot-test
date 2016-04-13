@@ -31,7 +31,9 @@ $app->post('/callback', function (Request $request) use ($app, $bot) {
         $content = $obj['content'];
 
         if ($content['text']) {
-            $bot->sendText($from, sprintf('%sでゲスな', $content['text'])); 
+            $input = array("ウヒョ", "ウヒョヒョー", "せやねん", "たしかーにバーガー", "たしかーに", "せやのう", "せやね", "そ！", "ういー", "ええやん", "それな", "よいショー", "それな", "おけ", "なるみ", "うすうす", "りょ", "あざす", "(˘ω˘)ｽﾔｱ");
+            $rand_keys = array_rand($input, 1);
+            $bot->sendText($from, $rand_keys[0]); 
         }
     }
 

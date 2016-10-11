@@ -84,7 +84,7 @@ $app->post('/callback', function (Request $request) use ($app, $bot) {
           if ($rate >= $rnd)
           {
             $rand_key = array_rand($input, 1);
-            $message  = $input[$rand_key];
+            $message  = $input[$rand_key][0];
             break;
           }
         }
